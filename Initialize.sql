@@ -1,0 +1,43 @@
+CREATE TABLE clickstream (
+	previous STRING,
+	curr STRING,
+	type STRING,
+	linkCount INT
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t';
+
+CREATE TABLE pageviews (
+	dom STRING,
+	title STRING,
+	total STRING,
+	response INT
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ' ';
+
+LOAD DATA LOCAL INPATH 'clickstream/clickstream-enwiki-2020-12.tsv' INTO TABLE clickstream;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-000000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-010000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-020000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-030000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-040000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-050000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-060000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-070000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-080000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-090000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-100000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-110000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-120000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-130000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-140000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-150000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-160000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-170000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-180000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-190000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-200000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-210000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-220000' INTO TABLE pageviews;
+LOAD DATA LOCAL INPATH 'pageviews/pageviews-20210120-230000' INTO TABLE pageviews;
